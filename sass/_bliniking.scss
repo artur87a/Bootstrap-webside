@@ -1,0 +1,15 @@
+.blink_me {
+  animation: blinker 2.5s ease-in-out infinite; /* Skrócono czas animacji do 1.5s i zmieniono typ funkcji czasu na 'ease-in-out' */
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 0; /* Dodano wartość początkową dla animacji */
+  }
+  50% {
+    opacity: 1; /* Ustalono wartość w połowie animacji */
+  }
+  100% {
+    opacity: 0; /* Ustalono wartość końcową animacji */
+  }
+}

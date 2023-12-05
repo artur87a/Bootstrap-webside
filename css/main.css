@@ -1,0 +1,86 @@
+@charset "UTF-8";
+.blink_me {
+  animation: blinker 2.5s ease-in-out infinite; /* Skrócono czas animacji do 1.5s i zmieniono typ funkcji czasu na 'ease-in-out' */
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 0; /* Dodano wartość początkową dla animacji */
+  }
+  50% {
+    opacity: 1; /* Ustalono wartość w połowie animacji */
+  }
+  100% {
+    opacity: 0; /* Ustalono wartość końcową animacji */
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #333;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+nav {
+  text-transform: uppercase;
+  z-index: 2;
+}
+nav .nav-link,
+nav .navbar-nav .nav-link.show,
+nav .navbar-brand,
+nav .fa-bars {
+  color: #fff;
+}
+nav .nav-link:focus,
+nav .nav-link:hover,
+nav .navbar-nav .nav-link.active,
+nav .navbar-nav .show > .nav.link {
+  color: #039dff;
+}
+nav .navbar-toggler {
+  padding: 10px;
+  border: 1px solid transparent;
+}
+nav .navbar-brand:focus,
+nav .navbar-brand:hover {
+  color: #039dff;
+}
+nav .navbar-brand {
+  font-weight: bold;
+}
+nav .navbar-brand span {
+  color: #039dff;
+}
+
+header.hero-img {
+  position: relative;
+  height: 100vh;
+  background-image: url(../img/image1big.jpg);
+  background-size: fit-content;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 1;
+  max-width: 100%;
+}
+
+.hero-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  font-size: 26px;
+  overflow: hidden;
+  height: max-content;
+}
+.hero-text span {
+  color: #039dff;
+}
+.hero-text .blink_me {
+  color: #fff;
+}/*# sourceMappingURL=main.css.map */
