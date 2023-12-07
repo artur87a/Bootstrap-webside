@@ -26,9 +26,14 @@ body {
   color: white;
 }
 
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 nav {
   text-transform: uppercase;
   z-index: 2;
+  transition: 0.6s ease-in-out;
 }
 nav .nav-link,
 nav .navbar-nav .nav-link.show,
