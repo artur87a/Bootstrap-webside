@@ -87,7 +87,6 @@ header.hero-img {
   background-attachment: fixed;
   background-repeat: no-repeat;
   z-index: 1;
-  max-width: 100%;
 }
 header.hero-img .hero-text {
   display: flex;
