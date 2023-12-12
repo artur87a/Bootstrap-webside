@@ -131,7 +131,7 @@ header.hero-img {
 }
 .about-hero{
   position: relative;
-  background-image: url("../img/image2.jpg");
+  background-image: url("../img/image2small.jpg");
   background-size: cover;
   background-position:center;
   color: $light-gray;
@@ -147,25 +147,45 @@ header.hero-img {
     z-index: -5;
 
   }
+  .about-hero-item{
+    margin: 10px 0;
+
+    i{
+      font-size: 36px;
+    }
+    .about-hero-title{
+      font-size: 24px;
+    }
+
+ 
 }
+}
+
 
 main {
   color: black;
 }
 
 @media (min-width: 768px) {
-  .hero-text {
-    h1 {
-      font-size: 42px;
-    }
-    p {
-      font-size: 22px;
-    }
-  }
+	.hero-text {
+		h1 {
+			font-size: 42px;
+		}
+
+		p {
+			font-size: 20px;
+		}
+	}
 }
+
 @media (min-width: 992px) {
   html {
     scroll-padding-top: 72px;
+  }
+  .about-hero{
+ 
+  background-image: url("../img/image2big.jpg");
+  
   }
 }
 

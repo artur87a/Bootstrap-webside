@@ -141,7 +141,7 @@ header.hero-img .fa-chevron-down {
 
 .about-hero {
   position: relative;
-  background-image: url("../img/image2.jpg");
+  background-image: url("../img/image2small.jpg");
   background-size: cover;
   background-position: center;
   color: #ddd;
@@ -156,6 +156,15 @@ header.hero-img .fa-chevron-down {
   background-color: rgba(0, 0, 0, 0.4);
   z-index: -5;
 }
+.about-hero .about-hero-item {
+  margin: 10px 0;
+}
+.about-hero .about-hero-item i {
+  font-size: 36px;
+}
+.about-hero .about-hero-item .about-hero-title {
+  font-size: 24px;
+}
 
 main {
   color: black;
@@ -166,12 +175,15 @@ main {
     font-size: 42px;
   }
   .hero-text p {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 @media (min-width: 992px) {
   html {
     scroll-padding-top: 72px;
+  }
+  .about-hero {
+    background-image: url("../img/image2big.jpg");
   }
 }
 @media (min-width: 1200px) {
