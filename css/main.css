@@ -212,4 +212,12 @@ main {
   header.hero-img {
     background-image: url(../img/image1big.jpg);
   }
+}
+@media (max-width: 767px) {
+  header.hero-img {
+    background-image: url("../img/mobile-image.jpg"); /* Change the background image for mobile */
+    background-size: cover; /* Adjust background size property */
+    background-position: center; /* Center the background image */
+    height: 50vh; /* Adjust the height for better visibility on mobile */
+  }
 }/*# sourceMappingURL=main.css.map */
