@@ -129,63 +129,64 @@ header.hero-img {
     transition: color 0.3s;
   }
 }
-.about-hero{
+.about-hero {
   position: relative;
   background-image: url("../img/image2small.jpg");
   background-size: cover;
-  background-position:center;
+  background-position: center;
   color: $light-gray;
   z-index: 0;
 
-  .about-shadow{
-    position:absolute;
-    top:0;
-    left:0;
+  .about-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     z-index: -5;
-
   }
-  .about-hero-item{
+  .about-hero-item {
     margin: 10px 0;
 
-    i{
+    i {
       font-size: 36px;
     }
-    .about-hero-title{
+    .about-hero-title {
       font-size: 24px;
     }
-
- 
+  }
 }
-}
-
 
 main {
   color: black;
 }
 
-@media (min-width: 768px) {
-	.hero-text {
-		h1 {
-			font-size: 42px;
-		}
+.carousel{
+  visibility: hidden;
+}
 
-		p {
-			font-size: 20px;
-		}
-	}
+@media (min-width: 768px) {
+  .hero-text {
+    h1 {
+      font-size: 42px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
 }
 
 @media (min-width: 992px) {
   html {
     scroll-padding-top: 72px;
   }
-  .about-hero{
- 
-  background-image: url("../img/image2big.jpg");
-  
+  .about-hero {
+    background-image: url("../img/image2big.jpg");
+  }
+  .carousel{
+    visibility: visible;
   }
 }
 
