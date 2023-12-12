@@ -166,12 +166,31 @@ header.hero-img .fa-chevron-down {
   font-size: 24px;
 }
 
-main {
-  color: black;
+.portfolio .carousel-item {
+  height: fit-content;
+  max-height: 800px;
+}
+.portfolio .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.4);
+  left: 0;
+  right: 0;
+  padding: 30px 0;
+}
+.portfolio .carousel-indicators {
+  padding-bottom: 20px;
+}
+.portfolio .carousel-item img {
+  width: 750px;
+  height: 750px;
 }
 
-.carousel {
-  visibility: hidden;
+.card-group img {
+  width: auto;
+  height: 200px;
+}
+
+main {
+  color: black;
 }
 
 @media (min-width: 768px) {
@@ -188,9 +207,6 @@ main {
   }
   .about-hero {
     background-image: url("../img/image2big.jpg");
-  }
-  .carousel {
-    visibility: visible;
   }
 }
 @media (min-width: 1200px) {
