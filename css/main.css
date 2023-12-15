@@ -25,7 +25,7 @@ html {
 }
 
 body {
-  background-color: #333;
+  background-color: #ebecf2;
   font-family: "Montserrat", sans-serif;
   color: white;
 }
@@ -52,6 +52,7 @@ nav {
   transition: background-color 0.6s ease-in-out;
 }
 nav .nav-link,
+nav .navbar-nav .show,
 nav .navbar-nav .nav-link.show,
 nav .navbar-brand,
 nav .fa-bars {
@@ -181,6 +182,7 @@ header.hero-img .fa-chevron-down {
 .portfolio .carousel-item img {
   width: 750px;
   height: 750px;
+  object-fit: cover;
 }
 
 .card-group img {
@@ -190,6 +192,54 @@ header.hero-img .fa-chevron-down {
 
 main {
   color: black;
+}
+
+.prices .price-box {
+  margin: 20px;
+  border: 2px solid white;
+  width: auto;
+  padding: 25px;
+  box-shadow: 5px 2px 5px black;
+  font-size: 20px;
+  transition: scale 0.3s;
+}
+.prices .price-box i {
+  font-size: 26px;
+  padding: 0 5px;
+}
+.prices .price-box .price-title {
+  text-transform: uppercase;
+  color: #039dff;
+  font-weight: bold;
+  font-size: 24px;
+}
+.prices .price-box .price-tag {
+  font-weight: bold;
+  font-size: 30px;
+}
+.prices .price-box .btn-secondary {
+  align-items: baseline;
+  justify-content: baseline;
+  scale: 1.4;
+  transition: background-color 0.6s ease-in-out;
+  border: none;
+  transition: 0.5s;
+}
+.prices .price-box .btn-secondary:hover {
+  transition: background-color 0.6s ease-in-out;
+  color: #ddd;
+  background-color: #039dff;
+  scale: 1.5;
+  transition: 0.5s;
+}
+.prices .price-box:hover {
+  scale: 1.05;
+}
+.prices .price-info {
+  margin-top: 30px;
+}
+.prices .price-info a {
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
