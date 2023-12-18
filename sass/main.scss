@@ -1,5 +1,6 @@
 @use "./colors" as *;
 @use "./bliniking" as *;
+@use "./animation" as *;
 
 * {
   box-sizing: border-box;
@@ -14,6 +15,7 @@ body {
   background-color: $bg-color;
   font-family: "Montserrat", sans-serif;
   color: white;
+  overflow-x: hidden;
 }
 
 .shadow-bg {
