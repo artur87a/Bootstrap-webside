@@ -21,13 +21,13 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#navId">
+  <body data-bs-spy="scroll" data-bs-target="#navId" data-bs-threshold="0,1" data-bs-root-margin="-30% 0% -70%">
 
-    <nav class="navbar navbar-expand-lg position-fixed top-0 w-100 py-3 " id="navId">
+    <nav class="navbar navbar-expand-lg position-fixed top-0 w-100 py-3 "  id="navId">
       <div class="container">
-        <a class="navbar-brand" href="#"
-          ><i class="fa-solid fa-ghost"></i> World <span>Beyond</span></a>
+        <a class="navbar-brand" href="#"><i class="fa-solid fa-ghost"></i> World <span>Beyond</span></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -42,7 +42,7 @@
 
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link active" href="#home">Home</a>
             <a class="nav-link" href="#about">About</a>
             <a class="nav-link" href="#portfolio">Portfolio</a>
             <a class="nav-link" href="#prices">Prices</a>
@@ -54,12 +54,12 @@
 
     <header class="hero-img" id="home">
       <div class="hero-text text-center p-2">
-        <h1>Welcome in <span>beyond</span> earth borders</h1>
-        <p>
+        <h1 data-aos="fade-up"data-aos-delay="200">Welcome in <span>beyond</span> earth borders</h1>
+        <p data-aos="fade-up"data-aos-delay="400">
           Where everything is possible! and yet
           <span class="blink_me">un</span>reachable
         </p>
-        <a href="#about" class="btn btn-outline-light">Get know us</a>
+        <a href="#about" class="btn btn-outline-light" data-aos="fade-up" data-aos-delay="600">Get know us</a>
       </div>
       <div class="hero-shadow"></div>
       <a href="#portfolio"><i class="fa-solid fa-chevron-down bounce-top" ></i> </a>
@@ -70,7 +70,7 @@
         <div class="container">
           <h2 class="section-title">about project</h2>
           <div class="underline"></div>
-
+<div data-aos="flip-right"  data-aos-duration="1300" data-aos-easing="ease-in-out">
           <div class="row">
             <div class="col-sm-6 col-md-4 text-center about-hover">
               <p><i class="fa-solid fa-earth-americas"></i></p>
@@ -104,6 +104,7 @@
             </div>
           </div>
         </div>
+ </div>       
       </section>
 
       <section class="about-hero py-5">
@@ -113,12 +114,12 @@
           <div class="underline"></div>
 
           <div class="row">
-            <div class="col-lg-4 text-center about-hero-item">
+            <div class="col-lg-4 text-center about-hero-item" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="100">
               <p class="about-hero-title mb-1">What we do</p>
               <p><i class="fa-solid fa-earth-americas"></i></p>
               <p class="about-hero-text">Lorem ipsum dolor sit amet.</p>
             </div>
-            <div class="col-lg-4 text-center about-hero-item">
+            <div class="col-lg-4 text-center about-hero-item" data-aos="flip-up" data-aos-duration="1500" data-aos-delay="200">
               <p class="about-hero-title mb-1">Who we are</p>
               <p><i class="fa-solid fa-earth-americas"></i></p>
               <p class="about-hero-text">
@@ -126,7 +127,7 @@
                 sed.
               </p>
             </div>
-            <div class="col-lg-4 text-center about-hero-item">
+            <div class="col-lg-4 text-center about-hero-item" data-aos="flip-right" data-aos-duration="1500" data-aos-delay="300">
               <p class="about-hero-title mb-1">Why we do?</p>
               <p><i class="fa-solid fa-earth-americas"></i></p>
               <p class="about-hero-text">
@@ -283,7 +284,7 @@
             <div class="price-wrap row text-center justify-content-center ">
   <!-- First price -->
   <div class="col-md-6 col-xl-4">
-    <div class="price-box">
+    <div class="price-box" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1200">
       <p class="price-title m-3">Basic Package</p>
       <hr />
       <p><span>Basic:</span> <i class="fa-solid fa-fish"></i></p>
@@ -297,7 +298,7 @@
   
   <!-- Second price -->
   <div class="col-md-6 col-xl-4">
-    <div class="price-box">
+    <div class="price-box" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1200">
       <p class="price-title m-3">Basic + extra</p>
       <hr />
       <p><span>Extra:</span> <i class="fa-solid fa-fish"></i><i class="fa-solid fa-dove"></i></p>
@@ -311,7 +312,7 @@
   
   <!-- Third price -->
   <div class="col-md-6 col-xl-4">
-    <div class="price-box">
+    <div class="price-box" data-aos="zoom-in" data-aos-delay="700" data-aos-duration="1200">
       <p class="price-title m-3">Full package</p>
       <hr />
       <p><span>Full Package</span> <i class="fa-solid fa-fish"></i><i class="fa-solid fa-dove"></i> <i class="fa-solid fa-dragon"></i></p>
@@ -331,24 +332,9 @@
       <h2 class="section-title">Contact</h2>
           <div class="underline"></div>
           <script type="text/javascript" src="https://form.jotform.com/jsform/233514531838356"></script>
-          <br><br><br>
-            
-
-
+   
     </div>
-          
-
-
-
-
-
-
-
-
-
-
-
-
+        
 </section>
 
     </main>
@@ -359,6 +345,14 @@
     ></script>
 
     <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      startEvent: 'DOMContentLoaded',
+      offset:200,
+      once: true,
+    });
+  </script>
     
   </body>
 </html>
