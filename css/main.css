@@ -139,6 +139,7 @@ header.hero-img .hero-text {
   align-items: center;
   flex-direction: column;
   height: 100%;
+  text-shadow: 5px 5px 5px #000;
 }
 header.hero-img .hero-text span {
   color: #039dff;
